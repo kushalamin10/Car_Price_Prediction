@@ -4,7 +4,7 @@ import pickle
 st.set_page_config(page_title='Car_price_prediction',page_icon='car1.png')
 st.header('Welcome to Car price predictor:')
 df=pd.read_csv('copied.csv')
-make_comp= list(df['Model'].unique())
+make_comp= list(df['Mark'].unique())
 make_comp.sort()
 car_model= list(df['Model'].unique())
 car_model.sort()
@@ -45,4 +45,5 @@ with st.container(border=True):
 
     transmission_type = list(df['Transmission'].unique())
     transmission_type.sort()
+
 
